@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="giphy-pro.css">
+	<title>Crafty Giphy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!--This is responsive, so everything's in a container-->
+	<div class="container">
+		<!--buttons get their own row-->
+		<div class="row">
+			<div class="button-bank col-12" id="button-bank"></div>
+		</div>
+		<!--Form and images share a row. The form goes first so that it can be put above the images on smaller screens.--> 
+		<div class="row col-xs-12">
+			<div class="form col-xs-12 col-md-4">
+				<form id="new-butt-form form-group">
+					<label for="new-butt">Search for more pictures</label>
+					<input type="text" id="new-butt" class="form-control"><br>
+					<label for="add-butt" class="sr-only">button to submit a new search term</label>
+					<input id="add-butt" type="submit" value="Search for more gifs" class="form-control">
+				</form>
+			</div>
+		<!--After all of that, the space for the images gets little fanfare-->
+			<div class="image-bank col-xs-12 col-md-8" id="image-bank"></div>
+		</div><!--closes the form/images row-->
+
+	</div><!--closes the container div-->
+
+	<!--so many bonus rounds here... going for a sticky footer!-->
+	<!--putting the footer outside the main container to fix issues with something causing space to happen unevenly on each end of the footer.--> 
+
+	<div class="footer col-12">
+		<p>Copyright &copy 2017 Carmel Johnson</p>
+	</div>
+
+	<!--Links to my JS code and to jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="giphy-pro.js"></script>
+	
+</body>
+</html>
